@@ -520,10 +520,9 @@ img {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
-  gap: 16px;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
@@ -532,6 +531,10 @@ img {
   align-self: flex-end;
   background: #4d5ae5;
   fill: #fff;
+  cursor: pointer;
+}
+.form-icon {
+  margin-left: 16px;
 }
 .modal-overlay {
   background: rgba(46, 47, 66, 0.4);
@@ -546,8 +549,8 @@ img {
   align-items: center;
   opacity: 1;
   pointer-events: auto;
-  transition: opacity cubic-bezier(0.4, 0, 0.2, 1),
-    visibility cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-overlay.is-open {
   opacity: 1;
@@ -610,6 +613,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 16px;
 }
 .user-form {
   display: flex;
@@ -620,11 +624,13 @@ img {
   margin-bottom: 8px;
 }
 .label {
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  margin-bottom: 4px;
 }
 .form-group-container {
   position: relative;
@@ -637,6 +643,7 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-left: 38px;
   outline: transparent;
+  background-color: transparent;
 }
 .contacts-icon {
   position: absolute;
@@ -713,7 +720,7 @@ img {
   position: relative;
 }
 .icon-checkbox {
-  width: 10xp;
+  width: 10px;
   height: 8px;
 }
 .privacy {
@@ -735,7 +742,7 @@ input[type="checbox"]:checked + .check-box .icon-checkbox {
   display: block;
   border-radius: 4px;
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
