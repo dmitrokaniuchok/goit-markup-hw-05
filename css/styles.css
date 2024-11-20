@@ -531,6 +531,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   align-self: flex-end;
   background: #4d5ae5;
+  fill: #fff;
 }
 .modal-overlay {
   background: rgba(46, 47, 66, 0.4);
@@ -634,6 +635,8 @@ img {
   width: 360px;
   height: 40px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-left: 38px;
+  outline: transparent;
 }
 .contacts-icon {
   position: absolute;
@@ -662,6 +665,7 @@ img {
   padding: 8px 16px;
   background-color: transparent;
   resize: none;
+  outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input:focus,
@@ -685,7 +689,7 @@ img {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-.checkbox {
+.check-box {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -709,15 +713,14 @@ img {
   position: relative;
 }
 .icon-checkbox {
-  border-radius: 2px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  width: 10xp;
+  height: 8px;
 }
 .privacy {
   line-height: 1.33;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
-  cursor: pointer;
 }
 input[type="checkbox"]:checked + .check-box .label-checkbox-span {
   background-color: #404bbf;
